@@ -76,6 +76,9 @@ export const Search: {
         LocationSearchBasic: typeof import("./search/Basic/locationSearchBasic");
         SalesOrderSearchBasic: typeof import("./search/Basic/salesOrderSearchBasic");
         SubsidiarySearchBasic: typeof import("./search/Basic/subsidiarySearchBasic");
+        DepartmentSearchBasic: typeof import("./search/Basic/departmentSearchBasic");
+        ClassificationSearchBasic: typeof import("./search/Basic/classificationSearchBasic");
+        EmployeeSearchBasic: typeof import("./search/Basic/employeeSearchBasic");
     };
     Fields: {
         SearchBooleanField: typeof import("./search/Fields/searchBooleanField");

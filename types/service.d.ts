@@ -108,4 +108,11 @@ declare class Service {
      * Clear preferences for the SOAP request
      */
     clearRequestPreferences(): void;
+    /**
+     * send raw json
+     * @param {('search' | 'add' | 'upsert' | 'get' | 'getList' | 'getAll' | 'delete' | 'deleteList' | 'addList')} operation
+     * @param {any} soapObject
+     * @return {Promise<any>}
+     */
+    rawJson(operation: ('search' | 'add' | 'upsert' | 'get' | 'getList' | 'getAll' | 'delete' | 'deleteList' | 'addList'), soapObject: any): Promise<any>;
 }

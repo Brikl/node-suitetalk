@@ -6,3 +6,6 @@ export const ItemSearchBasic: typeof import("./itemSearchBasic");
 export const LocationSearchBasic: typeof import("./locationSearchBasic");
 export const SalesOrderSearchBasic: typeof import("./salesOrderSearchBasic");
 export const SubsidiarySearchBasic: typeof import("./subsidiarySearchBasic");
+export const DepartmentSearchBasic: typeof import("./departmentSearchBasic");
+export const ClassificationSearchBasic: typeof import("./classificationSearchBasic");
+export const EmployeeSearchBasic: typeof import("./employeeSearchBasic");

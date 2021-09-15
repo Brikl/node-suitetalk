@@ -41,7 +41,7 @@ class SearchField extends BaseObject {
             throw new Error("search criteria field not set");
         }
 
-        if (!this.searchValue) {
+        if (this.searchValue === undefined || this.searchValue === null) {
             throw new Error("search criteria searchValue not set");
         }
 

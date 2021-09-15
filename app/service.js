@@ -235,6 +235,17 @@ class Service {
     clearRequestPreferences() {
         this.config.removeClientSoapHeader("preferences");
     }
+
+    /**
+     * send raw json
+     * @param {('search' | 'add' | 'upsert' | 'get' | 'getList' | 'getAll' | 'delete' | 'deleteList' | 'addList')} operation
+     * @param {any} soapObject
+     * @return {Promise<any>}
+     */
+    rawJson(operation , soapObject) {
+        const op = denodeify(this.config.client[operation]);
+        return op(soapObject)
+    }
 }
 
 module.exports = Service;
